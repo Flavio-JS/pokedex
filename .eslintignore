@@ -1,0 +1,13 @@
+.next
+public
+node_modules
+package-lock.json
+next.config.js
+jest.config.mjs
+load-node-app-insights.js
+coverage
+architecture
+build-aks
+out
+.swc
+docs
