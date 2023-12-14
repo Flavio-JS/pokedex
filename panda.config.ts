@@ -103,6 +103,7 @@ export default defineConfig({
   },
 
   jsxFramework: "react",
+  syntax: "template-literal",
 
   // The output directory for your css system
   outdir: "styled-system",
