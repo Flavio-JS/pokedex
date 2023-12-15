@@ -29,5 +29,3 @@ Certifique-se de ter Node.js instalado em sua máquina. Para executar o projeto,
 ---
 
 **Nota:** Este projeto é apenas para fins educacionais e de aprendizado.
-
-**API UTILIZADA:** https://www.pokemon.com/br/api/pokedex/kalos
