@@ -1,100 +1,4 @@
 const tokens = {
-  "colors.identity.primary": {
-    "value": "#DC0A2D",
-    "variable": "var(--colors-identity-primary)"
-  },
-  "colors.pokemonType.bug": {
-    "value": "#A7B723",
-    "variable": "var(--colors-pokemon-type-bug)"
-  },
-  "colors.pokemonType.dark": {
-    "value": "#75574C",
-    "variable": "var(--colors-pokemon-type-dark)"
-  },
-  "colors.pokemonType.dragon": {
-    "value": "#7037FF",
-    "variable": "var(--colors-pokemon-type-dragon)"
-  },
-  "colors.pokemonType.electric": {
-    "value": "#F9CF30",
-    "variable": "var(--colors-pokemon-type-electric)"
-  },
-  "colors.pokemonType.fairy": {
-    "value": "#E69EAC",
-    "variable": "var(--colors-pokemon-type-fairy)"
-  },
-  "colors.pokemonType.fighting": {
-    "value": "#C12239",
-    "variable": "var(--colors-pokemon-type-fighting)"
-  },
-  "colors.pokemonType.fire": {
-    "value": "#F57D31",
-    "variable": "var(--colors-pokemon-type-fire)"
-  },
-  "colors.pokemonType.flying": {
-    "value": "#A891EC",
-    "variable": "var(--colors-pokemon-type-flying)"
-  },
-  "colors.pokemonType.ghost": {
-    "value": "#70559B",
-    "variable": "var(--colors-pokemon-type-ghost)"
-  },
-  "colors.pokemonType.normal": {
-    "value": "#AAA67F",
-    "variable": "var(--colors-pokemon-type-normal)"
-  },
-  "colors.pokemonType.grass": {
-    "value": "#74CB48",
-    "variable": "var(--colors-pokemon-type-grass)"
-  },
-  "colors.pokemonType.ground": {
-    "value": "#DEC16B",
-    "variable": "var(--colors-pokemon-type-ground)"
-  },
-  "colors.pokemonType.ice": {
-    "value": "#9AD6DF",
-    "variable": "var(--colors-pokemon-type-ice)"
-  },
-  "colors.pokemonType.poison": {
-    "value": "#A43E9E",
-    "variable": "var(--colors-pokemon-type-poison)"
-  },
-  "colors.pokemonType.psychic": {
-    "value": "#FB5584",
-    "variable": "var(--colors-pokemon-type-psychic)"
-  },
-  "colors.pokemonType.rock": {
-    "value": "#B69E31",
-    "variable": "var(--colors-pokemon-type-rock)"
-  },
-  "colors.pokemonType.steel": {
-    "value": "#B7B9D0",
-    "variable": "var(--colors-pokemon-type-steel)"
-  },
-  "colors.pokemonType.water": {
-    "value": "#6493EB",
-    "variable": "var(--colors-pokemon-type-water)"
-  },
-  "colors.grayscale.dark": {
-    "value": "#1D1D1D",
-    "variable": "var(--colors-grayscale-dark)"
-  },
-  "colors.grayscale.medium": {
-    "value": "#666666",
-    "variable": "var(--colors-grayscale-medium)"
-  },
-  "colors.grayscale.light": {
-    "value": "#E0E0E0",
-    "variable": "var(--colors-grayscale-light)"
-  },
-  "colors.grayscale.background": {
-    "value": "#EFEFEF",
-    "variable": "var(--colors-grayscale-background)"
-  },
-  "colors.grayscale.white": {
-    "value": "#FFFFFF",
-    "variable": "var(--colors-grayscale-white)"
-  },
   "fonts.body": {
     "value": "system-ui, sans-serif",
     "variable": "var(--fonts-body)"
@@ -139,9 +43,101 @@ const tokens = {
     "value": "1536px",
     "variable": "var(--sizes-breakpoint-2xl)"
   },
-  "colors.colorPalette.primary": {
-    "value": "var(--colors-color-palette-primary)",
-    "variable": "var(--colors-color-palette-primary)"
+  "colors.pokemonType.bug": {
+    "value": "var(--colors-pokemon-type-bug)",
+    "variable": "var(--colors-pokemon-type-bug)"
+  },
+  "colors.pokemonType.dark": {
+    "value": "var(--colors-pokemon-type-dark)",
+    "variable": "var(--colors-pokemon-type-dark)"
+  },
+  "colors.pokemonType.dragon": {
+    "value": "var(--colors-pokemon-type-dragon)",
+    "variable": "var(--colors-pokemon-type-dragon)"
+  },
+  "colors.pokemonType.electric": {
+    "value": "var(--colors-pokemon-type-electric)",
+    "variable": "var(--colors-pokemon-type-electric)"
+  },
+  "colors.pokemonType.fairy": {
+    "value": "var(--colors-pokemon-type-fairy)",
+    "variable": "var(--colors-pokemon-type-fairy)"
+  },
+  "colors.pokemonType.fighting": {
+    "value": "var(--colors-pokemon-type-fighting)",
+    "variable": "var(--colors-pokemon-type-fighting)"
+  },
+  "colors.pokemonType.fire": {
+    "value": "var(--colors-pokemon-type-fire)",
+    "variable": "var(--colors-pokemon-type-fire)"
+  },
+  "colors.pokemonType.flying": {
+    "value": "var(--colors-pokemon-type-flying)",
+    "variable": "var(--colors-pokemon-type-flying)"
+  },
+  "colors.pokemonType.ghost": {
+    "value": "var(--colors-pokemon-type-ghost)",
+    "variable": "var(--colors-pokemon-type-ghost)"
+  },
+  "colors.pokemonType.normal": {
+    "value": "var(--colors-pokemon-type-normal)",
+    "variable": "var(--colors-pokemon-type-normal)"
+  },
+  "colors.pokemonType.grass": {
+    "value": "var(--colors-pokemon-type-grass)",
+    "variable": "var(--colors-pokemon-type-grass)"
+  },
+  "colors.pokemonType.ground": {
+    "value": "var(--colors-pokemon-type-ground)",
+    "variable": "var(--colors-pokemon-type-ground)"
+  },
+  "colors.pokemonType.ice": {
+    "value": "var(--colors-pokemon-type-ice)",
+    "variable": "var(--colors-pokemon-type-ice)"
+  },
+  "colors.pokemonType.poison": {
+    "value": "var(--colors-pokemon-type-poison)",
+    "variable": "var(--colors-pokemon-type-poison)"
+  },
+  "colors.pokemonType.psychic": {
+    "value": "var(--colors-pokemon-type-psychic)",
+    "variable": "var(--colors-pokemon-type-psychic)"
+  },
+  "colors.pokemonType.rock": {
+    "value": "var(--colors-pokemon-type-rock)",
+    "variable": "var(--colors-pokemon-type-rock)"
+  },
+  "colors.pokemonType.steel": {
+    "value": "var(--colors-pokemon-type-steel)",
+    "variable": "var(--colors-pokemon-type-steel)"
+  },
+  "colors.pokemonType.water": {
+    "value": "var(--colors-pokemon-type-water)",
+    "variable": "var(--colors-pokemon-type-water)"
+  },
+  "colors.identity.primary": {
+    "value": "var(--colors-identity-primary)",
+    "variable": "var(--colors-identity-primary)"
+  },
+  "colors.grayscale.dark": {
+    "value": "var(--colors-grayscale-dark)",
+    "variable": "var(--colors-grayscale-dark)"
+  },
+  "colors.grayscale.medium": {
+    "value": "var(--colors-grayscale-medium)",
+    "variable": "var(--colors-grayscale-medium)"
+  },
+  "colors.grayscale.light": {
+    "value": "var(--colors-grayscale-light)",
+    "variable": "var(--colors-grayscale-light)"
+  },
+  "colors.grayscale.background": {
+    "value": "var(--colors-grayscale-background)",
+    "variable": "var(--colors-grayscale-background)"
+  },
+  "colors.grayscale.white": {
+    "value": "var(--colors-grayscale-white)",
+    "variable": "var(--colors-grayscale-white)"
   },
   "colors.colorPalette.bug": {
     "value": "var(--colors-color-palette-bug)",
@@ -214,6 +210,10 @@ const tokens = {
   "colors.colorPalette.water": {
     "value": "var(--colors-color-palette-water)",
     "variable": "var(--colors-color-palette-water)"
+  },
+  "colors.colorPalette.primary": {
+    "value": "var(--colors-color-palette-primary)",
+    "variable": "var(--colors-color-palette-primary)"
   },
   "colors.colorPalette.medium": {
     "value": "var(--colors-color-palette-medium)",

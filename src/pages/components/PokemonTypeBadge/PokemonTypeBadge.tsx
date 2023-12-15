@@ -1,15 +1,10 @@
-import { token } from "../../../../styled-system/tokens";
-import * as S from "./PokemonTypeBadge.styles";
+import { PokemonTypeBadgeStyles } from "./PokemonTypeBadge.styles";
 import { pokemonTypeBadgeTypes } from "./PokemonTypeBadge.types";
 
 const PokemonTypeBadge = ({ pokemonType }: pokemonTypeBadgeTypes) => {
+  const styles = PokemonTypeBadgeStyles({ backgroundTypeColor: pokemonType });
   return (
-    <div
-      className={S.PokemonTypeBadgeStyle}
-      style={{ backgroundColor: token(`colors.pokemonType.${pokemonType}`) }}
-    >
-      {pokemonType}
-    </div>
+    <div className={styles.pokemonTypeBadgeStylesWrapper}>{pokemonType}</div>
   );
 };
 

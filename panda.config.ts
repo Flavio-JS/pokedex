@@ -16,12 +16,12 @@ export default defineConfig({
   // Useful for theme customization
   theme: {
     tokens: {
+      fonts: {
+        body: { value: "system-ui, sans-serif" },
+      },
+    },
+    semanticTokens: {
       colors: {
-        identity: {
-          primary: {
-            value: "#DC0A2D",
-          },
-        },
         pokemonType: {
           bug: {
             value: "#A7B723",
@@ -78,6 +78,11 @@ export default defineConfig({
             value: "#6493EB",
           },
         },
+        identity: {
+          primary: {
+            value: "#DC0A2D",
+          },
+        },
         grayscale: {
           dark: {
             value: "#1D1D1D",
@@ -96,14 +101,11 @@ export default defineConfig({
           },
         },
       },
-      fonts: {
-        body: { value: "system-ui, sans-serif" },
-      },
-    },
+      
+    }
   },
 
   jsxFramework: "react",
-  syntax: "template-literal",
 
   // The output directory for your css system
   outdir: "styled-system",

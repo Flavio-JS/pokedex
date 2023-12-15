@@ -1,34 +1,70 @@
 import { css } from "../../styled-system/css";
+import { PokemonCard } from "./components/PokemonCard/PokemonCard";
 import { PokemonTypeBadge } from "./components/PokemonTypeBadge/PokemonTypeBadge";
 
 export default function Home() {
+  const pokemonTypes = [
+    "bug",
+    "dark",
+    "dragon",
+    "electric",
+    "fairy",
+    "fighting",
+    "fire",
+    "flying",
+    "ghost",
+    "grass",
+    "ground",
+    "ice",
+    "normal",
+    "poison",
+    "psychic",
+    "rock",
+    "steel",
+    "water",
+  ];
   return (
     <div
-      className={css`
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-      `}
+      className={css({
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+      })}
     >
-      <PokemonTypeBadge pokemonType="bug" />
-      <PokemonTypeBadge pokemonType="dark" />
-      <PokemonTypeBadge pokemonType="dragon" />
-      <PokemonTypeBadge pokemonType="electric" />
-      <PokemonTypeBadge pokemonType="fairy" />
-      <PokemonTypeBadge pokemonType="fighting" />
-      <PokemonTypeBadge pokemonType="fire" />
-      <PokemonTypeBadge pokemonType="flying" />
-      <PokemonTypeBadge pokemonType="ghost" />
-      <PokemonTypeBadge pokemonType="grass" />
-      <PokemonTypeBadge pokemonType="ground" />
-      <PokemonTypeBadge pokemonType="ice" />
-      <PokemonTypeBadge pokemonType="normal" />
-      <PokemonTypeBadge pokemonType="poison" />
-      <PokemonTypeBadge pokemonType="psychic" />
-      <PokemonTypeBadge pokemonType="rock" />
-      <PokemonTypeBadge pokemonType="steel" />
-      <PokemonTypeBadge pokemonType="water" />
+      <div
+        className={css({
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: "10px",
+        })}
+      >
+        {pokemonTypes.map((pokemonType) => (
+          <PokemonTypeBadge pokemonType={pokemonType} key={pokemonType} />
+        ))}
+      </div>
+      <div
+        className={css({
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: "10px",
+          padding: "10px",
+        })}
+      >
+        <PokemonCard
+          PokemonNumber="0001"
+          pokemonImgUrl="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+          pokemonName="Bulbasaur"
+          pokemonImgAlt="Bulbasaur"
+        />
+        <PokemonCard
+          PokemonNumber="0004"
+          pokemonImgUrl="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
+          pokemonName="Charmander"
+          pokemonImgAlt="Charmander"
+        />
+      </div>
     </div>
   );
 }

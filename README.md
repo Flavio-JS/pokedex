@@ -22,6 +22,10 @@ Certifique-se de ter Node.js instalado em sua máquina. Para executar o projeto,
 2. Instale as dependências utilizando o comando `npm install`.
 3. Inicie o servidor de desenvolvimento com `npm run dev`.
 
+## Design Figma
+
+[Pokédex Community](https://www.figma.com/file/j4zwx9YCogFTcTk8rMCGoH/Pok%C3%A9dex-(Community)?node-id=913%3A237&mode=dev)
+
 ---
 
 **Nota:** Este projeto é apenas para fins educacionais e de aprendizado.
