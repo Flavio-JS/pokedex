@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokedex usando Next.js, TypeScript e PandaCSS
 
-## Getting Started
+Este projeto é uma Pokedex criada para estudar e utilizar a biblioteca PandaCSS. A Pokedex é desenvolvida com Next.js e TypeScript.
 
-First, run the development server:
+## PandaCSS Documentação
 
-```bash
-npm run dev
-```
+A documentação completa da PandaCSS está disponível em [PandaCSS Documentation](https://panda-css.com/docs/overview/getting-started). Lá você encontrará detalhes sobre como começar, exemplos de uso e uma visão geral dos recursos disponíveis.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura de Diretórios
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Os componentes da Pokedex estão localizados no diretório `src/pages/components/`. Cada componente possui três arquivos associados:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `NomeDoComponente.tsx`: Este arquivo contém a implementação do componente em TypeScript e JSX.
+- `NomeDoComponente.styles.ts`: Aqui estão as estilizações específicas do componente usando TypeScript.
+- `NomeDoComponente.types.ts`: Este arquivo contém os tipos TypeScript necessários para o componente.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Como Executar o Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Certifique-se de ter Node.js instalado em sua máquina. Para executar o projeto, siga estes passos:
 
-## Learn More
+1. Clone este repositório.
+2. Instale as dependências utilizando o comando `npm install`.
+3. Inicie o servidor de desenvolvimento com `npm run dev`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Nota:** Este projeto é apenas para fins educacionais e de aprendizado.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**API UTILIZADA:** https://www.pokemon.com/br/api/pokedex/kalos
