@@ -1,29 +1,9 @@
 import { css } from "../../styled-system/css";
 import { PokemonCard } from "./components/PokemonCard/PokemonCard";
-import { PokemonTypeBadge } from "./components/PokemonTypeBadge/PokemonTypeBadge";
 import pokemonsData from "./api/pokemons.json";
+import { TextField } from "../../node_modules/@mui/material/index";
 
 export default function Home() {
-  const pokemonTypes = [
-    "bug",
-    "dark",
-    "dragon",
-    "electric",
-    "fairy",
-    "fighting",
-    "fire",
-    "flying",
-    "ghost",
-    "grass",
-    "ground",
-    "ice",
-    "normal",
-    "poison",
-    "psychic",
-    "rock",
-    "steel",
-    "water",
-  ];
   return (
     <div
       className={css({
@@ -32,18 +12,7 @@ export default function Home() {
         gap: "10px",
       })}
     >
-      <div
-        className={css({
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          gap: "10px",
-        })}
-      >
-        {pokemonTypes.map((pokemonType) => (
-          <PokemonTypeBadge pokemonType={pokemonType} key={pokemonType} />
-        ))}
-      </div>
+      <TextField label="Meu Texto" variant="outlined" />
       <div
         className={css({
           display: "flex",
@@ -56,7 +25,7 @@ export default function Home() {
         {pokemonsData.map((pokemonData) => (
           <PokemonCard
             PokemonNumber={pokemonData.number}
-            pokemonImgUrl={pokemonData.ThumbnailImage}
+            pokemonImgUrl={pokemonData.urlImage}
             pokemonName={pokemonData.name}
             pokemonImgAlt={pokemonData.name}
           />
