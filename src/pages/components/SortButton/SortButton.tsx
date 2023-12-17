@@ -1,35 +1,13 @@
-import { useRouter } from "../../../../node_modules/next/router";
+import { useHomePage } from "@/pages/useHomePage";
 import { Icon } from "../Icon/Icon";
 import { sortButtonStyles } from "./SortButton.styles";
+import { useSortButton } from "./useSortButton";
 
 export const SortButton = () => {
-  const router = useRouter();
-
-  const sortByNumberOrName =
-    router.query.sort === undefined || router.query.sort === "number"
-      ? "number"
-      : "name";
+  const { handleClick } = useSortButton();
+  const { sortByNumberOrName } = useHomePage();
 
   const styles = sortButtonStyles({ sort: sortByNumberOrName });
-
-  const handleClick = () => {
-    const currentQuery = router.query || {};
-    const updatedSort = sortByNumberOrName === "number" ? "name" : "number";
-
-    void router.replace(
-      {
-        pathname: router.pathname,
-        query: {
-          ...currentQuery,
-          sort: updatedSort,
-        },
-      },
-      undefined,
-      {
-        shallow: true,
-      }
-    );
-  };
 
   return (
     <button className={styles.SortButtonWrapper} onClick={() => handleClick()}>
