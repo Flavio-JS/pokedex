@@ -1,6 +1,6 @@
 import { sva } from "../../../../styled-system/css";
 
-export const PokemonTypeBadgeStyles = sva({
+export const pokemonTypeBadgeStyles = sva({
   slots: ["pokemonTypeBadgeStylesWrapper"],
   base: {
     pokemonTypeBadgeStylesWrapper: {

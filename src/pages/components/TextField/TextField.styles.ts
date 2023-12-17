@@ -6,8 +6,9 @@ export const TextFieldStyles = sva({
     TextFieldWrapper: {
       display: "flex",
       alignItems: "center",
-      justifyContent: "center",
-      width: "min-content",
+      justifyContent: "flex-start",
+      width: "100%",
+      maxWidth: "200px",
       padding: "8px 16px 8px 12px",
       borderRadius: "16px",
       boxShadow: "0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset",
@@ -15,6 +16,7 @@ export const TextFieldStyles = sva({
     },
     TextFieldInput: {
       all: "unset",
+      maxWidth: "120px",
 
       "&:focus-visible": {
         outline: "none",
