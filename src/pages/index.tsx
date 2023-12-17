@@ -1,9 +1,11 @@
-import { css } from "../../styled-system/css";
 import { PokemonCard } from "./components/PokemonCard/PokemonCard";
 import pokemonsData from "./api/pokemons.json";
-import { TextField } from "../../node_modules/@mui/material/index";
+import { css } from "../../styled-system/css/css";
+import { TextField } from "./components/TextField/TextField";
+import { useState } from "react";
 
 export default function Home() {
+  const [search, setSearch] = useState("");
   return (
     <div
       className={css({
@@ -12,7 +14,7 @@ export default function Home() {
         gap: "10px",
       })}
     >
-      <TextField label="Meu Texto" variant="outlined" />
+      <TextField />
       <div
         className={css({
           display: "flex",
