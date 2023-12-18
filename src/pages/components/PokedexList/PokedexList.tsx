@@ -1,5 +1,4 @@
 import { useHomePage } from "@/pages/useHomePage";
-import { css } from "../../../../styled-system/css/css";
 import { PokemonCard } from "../PokemonCard/PokemonCard";
 import { pokedexListStyles } from "./PokedexList.styles";
 import { PokedexListHeader } from "./PokedexListHeader/PokedexListHeader";
@@ -14,7 +13,7 @@ export const PokedexList = () => {
         {sortedPokemons.map((pokemonData) => (
           <PokemonCard
             key={pokemonData.name}
-            PokemonNumber={pokemonData.number}
+            pokemonNumber={pokemonData.number}
             pokemonImgUrl={pokemonData.urlImage}
             pokemonName={pokemonData.name}
             pokemonImgAlt={pokemonData.name}

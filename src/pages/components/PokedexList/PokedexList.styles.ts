@@ -22,7 +22,7 @@ export const pokedexListStyles = sva({
       gap: "10px",
       padding: "10px",
       backgroundColor: "grayscale.white",
-      justifyContent: "flex-start",
+      justifyContent: "space-between",
       alignContent: "flex-start",
       borderRadius: "8px",
       overflowY: "scroll",
