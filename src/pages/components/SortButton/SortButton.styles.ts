@@ -12,6 +12,7 @@ export const sortButtonStyles = sva({
       borderRadius: "50%",
       width: "32px",
       height: "32px",
+      backgroundColor: "grayscale.white",
 
       "&:hover": {
         cursor: "pointer",

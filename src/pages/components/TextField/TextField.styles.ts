@@ -13,6 +13,7 @@ export const TextFieldStyles = sva({
       borderRadius: "16px",
       boxShadow: "0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset",
       gap: "8px",
+      backgroundColor: "grayscale.white",
     },
     TextFieldInput: {
       all: "unset",
