@@ -1,4 +1,4 @@
-import { sva } from "../../../../styled-system/css/sva";
+import { sva } from "../../../styled-system/css/sva";
 
 export const pokedexListStyles = sva({
   slots: ["pokedexListWrapper", "pokedexListPokemonCardWrapper"],

@@ -1,4 +1,4 @@
-import { sva } from "../../../../styled-system/css";
+import { sva } from "../../../styled-system/css";
 
 export const pokemonCardStyles = sva({
   slots: [
@@ -19,7 +19,7 @@ export const pokemonCardStyles = sva({
       boxShadow: "0px 1px 3px 1px rgba(0, 0, 0, 0.20)",
       "&:hover": {
         cursor: "pointer",
-      }
+      },
     },
     pokemonNumberWrapper: {
       display: "flex",

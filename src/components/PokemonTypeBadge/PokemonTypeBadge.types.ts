@@ -1,4 +1,4 @@
-export type pokemonTypeBadgeTypes = {
+export type PokemonTypeBadgeTypes = {
   pokemonType:
     | "bug"
     | "dark"

@@ -1,4 +1,4 @@
-export type pokemonCardDataTypes = {
+export type PokemonCardDataTypes = {
   pokemonName: string;
   pokemonImgUrl: string;
   pokemonImgAlt: string;

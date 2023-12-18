@@ -1,11 +1,9 @@
 import { pokemonTypeBadgeStyles } from "./PokemonTypeBadge.styles";
-import { pokemonTypeBadgeTypes } from "./PokemonTypeBadge.types";
+import { PokemonTypeBadgeTypes } from "./PokemonTypeBadge.types";
 
-const PokemonTypeBadge = ({ pokemonType }: pokemonTypeBadgeTypes) => {
+export const PokemonTypeBadge = ({ pokemonType }: PokemonTypeBadgeTypes) => {
   const styles = pokemonTypeBadgeStyles({ backgroundTypeColor: pokemonType });
   return (
     <div className={styles.pokemonTypeBadgeStylesWrapper}>{pokemonType}</div>
   );
 };
-
-export { PokemonTypeBadge };

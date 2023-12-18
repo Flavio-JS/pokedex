@@ -1,5 +1,5 @@
-import { useHomePage } from "@/pages/useHomePage";
-import { useRouter } from "../../../../node_modules/next/router";
+import { useHomePage } from "@/hooks/Home/useHomePage";
+import { useRouter } from "next/router";
 
 export const useSortButton = () => {
   const router = useRouter();

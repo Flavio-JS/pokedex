@@ -8,10 +8,8 @@ interface IIconComponentProps {
   props?: SVGProps<SVGSVGElement>;
 }
 
-const Icon = ({ iconName, props }: IIconComponentProps) => {
+export const Icon = ({ iconName, props }: IIconComponentProps) => {
   const ChosenIcon = icons[iconName];
 
   return <ChosenIcon {...props} />;
 };
-
-export { Icon };

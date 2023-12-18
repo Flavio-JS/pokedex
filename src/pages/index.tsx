@@ -1,5 +1,6 @@
-import { PokedexList } from "./components/PokedexList/PokedexList";
+import { PokedexList } from "../components/PokedexList/PokedexList";
 
-export default function Home() {
+const Home = () => {
   return <PokedexList />;
-}
+};
+export default Home;

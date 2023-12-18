@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import { useRouter } from "../../../../node_modules/next/router";
+import { useRouter } from "next/router";
 
 export const useTextField = () => {
   const router = useRouter();
@@ -8,8 +8,10 @@ export const useTextField = () => {
 
   const handleClick = () => {
     const currentQuery = router.query || {};
+    // preciso separar a query filter das restantes
+    // eslint-disable-next-line no-unused-vars
     const { filter, ...rest } = currentQuery;
-  
+
     setSearchTerm("");
     void router.replace(
       {

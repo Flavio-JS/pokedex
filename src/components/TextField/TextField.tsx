@@ -1,6 +1,6 @@
 import { Icon } from "../Icon/Icon";
 import { TextFieldStyles } from "./TextField.styles";
-import { useTextField } from "./useTextField";
+import { useTextField } from "../../hooks/TextField/useTextField";
 
 export const TextField = () => {
   const styles = TextFieldStyles();
@@ -18,7 +18,11 @@ export const TextField = () => {
         onChange={(e) => handleInputChange(e)}
       />
 
-      <button onClick={() => handleClick()}>
+      <button
+        type="button"
+        onClick={() => handleClick()}
+        aria-label="Remover filtro"
+      >
         <Icon iconName="XIcon" />
       </button>
     </div>

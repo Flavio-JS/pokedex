@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { pokemonCardDataTypes } from "./PokemonCard.types";
+import { PokemonCardDataTypes } from "./PokemonCard.types";
 import { pokemonCardStyles } from "./PokemonCard.styles";
-import { useRouter } from "../../../../node_modules/next/router";
 
 export const PokemonCard = ({
   pokemonNumber,
   pokemonImgUrl,
   pokemonImgAlt,
   pokemonName,
-}: pokemonCardDataTypes) => {
+}: PokemonCardDataTypes) => {
   const styles = pokemonCardStyles();
-  const router = useRouter();
   return (
     <div className={styles.pokemonCardWrapper}>
       <div className={styles.pokemonNumberWrapper}>#{pokemonNumber}</div>
