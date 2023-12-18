@@ -13,19 +13,14 @@ export const useHomePage = () => {
       ? "number"
       : "name";
 
-  const filterByNumberOrName =
-    router.query.filterBy === undefined || router.query.filterBy === "name"
-      ? "name"
-      : "number";
-
   const filteredPokemons = filterValue
     ? pokemonsData.filter((pokemonData) => {
-        if (filterByNumberOrName === "number") {
-          return pokemonData.id.toString().includes(filterValue);
-        } else {
-          const pokemonName = pokemonData.name.toLowerCase();
-          return pokemonName.includes(filterValue.toLowerCase());
-        }
+        const pokemonName = pokemonData.name.toLowerCase();
+        const filterLower = filterValue.toLowerCase();
+        const matchesId = pokemonData.id.toString().includes(filterLower);
+        const matchesName = pokemonName.includes(filterLower);
+
+        return matchesId || matchesName;
       })
     : pokemonsData;
 
@@ -45,7 +40,6 @@ export const useHomePage = () => {
   return {
     filterValue,
     sortByNumberOrName,
-    filterByNumberOrName,
     sortedPokemons,
   };
 };

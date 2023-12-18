@@ -6,21 +6,16 @@ export const useTextField = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filterByNumberOrName =
-    router.query.filterBy === undefined || router.query.filterBy === "name"
-      ? "name"
-      : "number";
-
   const handleClick = () => {
     const currentQuery = router.query || {};
-    const updatedFilter = filterByNumberOrName === "name" ? "number" : "name";
-
+    const { filter, ...rest } = currentQuery;
+  
+    setSearchTerm("");
     void router.replace(
       {
         pathname: router.pathname,
         query: {
-          ...currentQuery,
-          filterBy: updatedFilter,
+          ...rest,
         },
       },
       undefined,
@@ -53,7 +48,6 @@ export const useTextField = () => {
   };
   return {
     searchTerm,
-    filterByNumberOrName,
     handleInputChange,
     handleClick,
   };

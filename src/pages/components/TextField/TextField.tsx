@@ -4,8 +4,7 @@ import { useTextField } from "./useTextField";
 
 export const TextField = () => {
   const styles = TextFieldStyles();
-  const { searchTerm, filterByNumberOrName, handleInputChange, handleClick } =
-    useTextField();
+  const { searchTerm, handleInputChange, handleClick } = useTextField();
 
   return (
     <div className={styles.TextFieldWrapper}>
@@ -20,13 +19,7 @@ export const TextField = () => {
       />
 
       <button onClick={() => handleClick()}>
-        <Icon
-          iconName={
-            filterByNumberOrName === "number"
-              ? "SortByNumberIcon"
-              : "SortByNameIcon"
-          }
-        />
+        <Icon iconName="XIcon" />
       </button>
     </div>
   );
