@@ -1,6 +1,6 @@
 # Pokedex usando Next.js, TypeScript e PandaCSS
 
-Este projeto é uma Pokedex criada para estudar e utilizar a biblioteca PandaCSS. A Pokedex é desenvolvida com Next.js e TypeScript.
+Este projeto é uma Pokedex criada para estudar e utilizar a biblioteca PandaCSS. A Pokedex é desenvolvida com Next.js e TypeScript e obviamente com PandaCss
 
 ## PandaCSS Documentação
 
@@ -8,7 +8,7 @@ A documentação completa da PandaCSS está disponível em [PandaCSS Documentati
 
 ## Estrutura de Diretórios
 
-Os componentes da Pokedex estão localizados no diretório `src/pages/components/`. Cada componente possui três arquivos associados:
+Os componentes da Pokedex estão localizados no diretório `src/components/`. Cada componente possui até três arquivos associados:
 
 - `NomeDoComponente.tsx`: Este arquivo contém a implementação do componente em TypeScript e JSX.
 - `NomeDoComponente.styles.ts`: Aqui estão as estilizações específicas do componente usando TypeScript.
