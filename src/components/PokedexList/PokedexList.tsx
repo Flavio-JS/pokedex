@@ -13,7 +13,8 @@ export const PokedexList = () => {
       <div className={styles.pokedexListPokemonCardWrapper}>
         {sortedPokemons.map((pokemonData) => (
           <PokemonCard
-            key={pokemonData.name}
+            key={pokemonData.id}
+            pokemonId={pokemonData.id}
             pokemonNumber={pokemonData.number}
             pokemonImgUrl={pokemonData.urlImage}
             pokemonName={pokemonData.name}

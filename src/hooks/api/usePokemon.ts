@@ -1,5 +1,5 @@
-import { useQuery } from "react-query/types";
 import axios from "axios";
+import { useQuery } from "react-query";
 import { PokemonData, PokemonDataSummarized } from "./usePokemon.types";
 
 const basePath = "https://pokeapi.co/api/v2/pokemon/";
@@ -39,11 +39,14 @@ export const usePokemonById = (id: number) => {
         spd: pokemonData.stats[5].base_stat,
       };
 
+      const name =
+        pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
+
       const pokemonDataSummarized: PokemonDataSummarized = {
         abilities,
         height: pokemonData.height,
         id: pokemonData.id,
-        name: pokemonData.name,
+        name,
         stats,
         types,
         weight: pokemonData.weight,
