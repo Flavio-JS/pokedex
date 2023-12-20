@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import pokemonsData from "../../pages/api/pokemons.json";
+import pokemonsData from "../api/pokemons.json";
 
 export const useHomePage = () => {
   const router = useRouter();

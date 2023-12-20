@@ -1,3 +1,4 @@
+import { usePokemonById } from "@/hooks/api/usePokemon";
 import { useHomePage } from "@/hooks/Home/useHomePage";
 import { PokemonCard } from "../PokemonCard/PokemonCard";
 import { pokedexListStyles } from "./PokedexList.styles";
@@ -6,6 +7,7 @@ import { PokedexListHeader } from "./PokedexListHeader/PokedexListHeader";
 export const PokedexList = () => {
   const styles = pokedexListStyles();
   const { sortedPokemons } = useHomePage();
+
   return (
     <div className={styles.pokedexListWrapper}>
       <PokedexListHeader />

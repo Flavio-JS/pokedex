@@ -24,8 +24,12 @@ Certifique-se de ter Node.js instalado em sua máquina. Para executar o projeto,
 
 ## Design Figma
 
-[Pokédex Community](https://www.figma.com/file/j4zwx9YCogFTcTk8rMCGoH/Pok%C3%A9dex-(Community)?node-id=913%3A237&mode=dev)
+[Pokédex Community](<https://www.figma.com/file/j4zwx9YCogFTcTk8rMCGoH/Pok%C3%A9dex-(Community)?node-id=913%3A237&mode=dev>)
 
 ---
 
 **Nota:** Este projeto é apenas para fins educacionais e de aprendizado.
+
+## API
+
+[PokeAPI](https://pokeapi.co/docs/v2)
