@@ -1,5 +1,5 @@
-import { useQuery, QueryResult } from "../../../node_modules/react-query";
-import axios from "../../../node_modules/axios/index";
+import { useQuery } from "react-query/types";
+import axios from "axios";
 import { PokemonData, PokemonDataSummarized } from "./usePokemon.types";
 
 const basePath = "https://pokeapi.co/api/v2/pokemon/";
@@ -19,7 +19,7 @@ export const usePokemonById = (id: number) => {
   return useQuery({
     queryKey: [`${usePokemonByIdQuery}${id}`],
     queryFn: () => getPokemonById(id),
-    select: (pokemonData: PokemonData): QueryResult<PokemonDataSummarized> => {
+    select: (pokemonData: PokemonData): PokemonDataSummarized => {
       let abilities: string[] = [];
       for (let i = 0; i < pokemonData.abilities.length; i += 1) {
         abilities = [...abilities, pokemonData.abilities[i].ability.name];

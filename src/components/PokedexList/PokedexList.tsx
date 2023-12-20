@@ -1,4 +1,3 @@
-import { usePokemonById } from "@/hooks/api/usePokemon";
 import { useHomePage } from "@/hooks/Home/useHomePage";
 import { PokemonCard } from "../PokemonCard/PokemonCard";
 import { pokedexListStyles } from "./PokedexList.styles";
