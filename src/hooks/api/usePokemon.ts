@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useQuery } from "react-query";
+import { formatIdPokemon } from "@/utils/formatIdPokemon";
+import { PokemonTypes } from "@/components/PokemonTypeBadge/PokemonTypeBadge.types";
 import { PokemonData, PokemonDataSummarized } from "./usePokemon.types";
 
 const basePath = "https://pokeapi.co/api/v2/pokemon/";
@@ -25,7 +27,7 @@ export const usePokemonById = (id: number) => {
         abilities = [...abilities, pokemonData.abilities[i].ability.name];
       }
 
-      let types: string[] = [];
+      let types: PokemonTypes[] = [];
       for (let i = 0; i < pokemonData.types.length; i += 1) {
         types = [...types, pokemonData.types[i].type.name];
       }
@@ -42,14 +44,20 @@ export const usePokemonById = (id: number) => {
       const name =
         pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
 
+      const imgUrl = `/imagens_pokemon/${formatIdPokemon(pokemonData.id)}.png`;
+
+      const number = formatIdPokemon(pokemonData.id);
+
       const pokemonDataSummarized: PokemonDataSummarized = {
         abilities,
         height: pokemonData.height,
         id: pokemonData.id,
+        number,
         name,
         stats,
         types,
         weight: pokemonData.weight,
+        imgUrl,
       };
 
       return pokemonDataSummarized;
