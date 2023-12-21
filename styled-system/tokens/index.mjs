@@ -139,6 +139,10 @@ const tokens = {
     "value": "var(--colors-grayscale-white)",
     "variable": "var(--colors-grayscale-white)"
   },
+  "colors.grayscale.wireframe": {
+    "value": "var(--colors-grayscale-wireframe)",
+    "variable": "var(--colors-grayscale-wireframe)"
+  },
   "colors.colorPalette.bug": {
     "value": "var(--colors-color-palette-bug)",
     "variable": "var(--colors-color-palette-bug)"
@@ -230,6 +234,10 @@ const tokens = {
   "colors.colorPalette.white": {
     "value": "var(--colors-color-palette-white)",
     "variable": "var(--colors-color-palette-white)"
+  },
+  "colors.colorPalette.wireframe": {
+    "value": "var(--colors-color-palette-wireframe)",
+    "variable": "var(--colors-color-palette-wireframe)"
   }
 }
 

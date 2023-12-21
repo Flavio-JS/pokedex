@@ -92,4 +92,224 @@ export const Icons = {
       </svg>
     );
   },
+  ArrowLeftIcon: ({ ...props }: SVGProps<SVGSVGElement>) => {
+    return (
+      <svg
+        width={props.width ?? "32"}
+        height={props.height ?? "32"}
+        viewBox={props.viewBox ?? "0 0 32 32"}
+        {...props}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_d_1013_491)">
+          <path
+            d="M14.8999 25.9666L5.63325 16.6999C5.52214 16.5888 5.44436 16.4777 5.39992 16.3666C5.35547 16.2555 5.33325 16.1333 5.33325 15.9999C5.33325 15.8666 5.35547 15.7444 5.39992 15.6333C5.44436 15.5222 5.52214 15.4111 5.63325 15.2999L14.9333 5.99994C15.111 5.82216 15.3333 5.73328 15.5999 5.73328C15.8666 5.73328 16.0999 5.83328 16.2999 6.03328C16.4999 6.23328 16.5999 6.46661 16.5999 6.73328C16.5999 6.99994 16.4999 7.23328 16.2999 7.43328L8.73325 14.9999H25.2666C25.5555 14.9999 25.7944 15.0944 25.9833 15.2833C26.1721 15.4722 26.2666 15.7111 26.2666 15.9999C26.2666 16.2888 26.1721 16.5277 25.9833 16.7166C25.7944 16.9055 25.5555 16.9999 25.2666 16.9999H8.73325L16.3333 24.5999C16.511 24.7777 16.5999 24.9999 16.5999 25.2666C16.5999 25.5333 16.4999 25.7666 16.2999 25.9666C16.0999 26.1666 15.8666 26.2666 15.5999 26.2666C15.3333 26.2666 15.0999 26.1666 14.8999 25.9666Z"
+            fill={props.color ? props.color : "white"}
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_1013_491"
+            x="1.33325"
+            y="2.73328"
+            width="28.9333"
+            height="28.5333"
+            filterUnits="userSpaceOnUse"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feMorphology
+              radius="1"
+              operator="dilate"
+              in="SourceAlpha"
+              result="effect1_dropShadow_1013_491"
+            />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_1013_491"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_1013_491"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    );
+  },
+  ChevronLeftIcon: ({ ...props }: SVGProps<SVGSVGElement>) => {
+    return (
+      <svg
+        width={props.width ?? "24"}
+        height={props.height ?? "24"}
+        viewBox={props.viewBox ?? "0 0 24 24"}
+        {...props}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_d_1013_695)">
+          <path
+            d="M13.475 17.45L8.52505 12.5C8.44171 12.4167 8.38338 12.3333 8.35005 12.25C8.31672 12.1667 8.30005 12.075 8.30005 11.975C8.30005 11.875 8.31672 11.7833 8.35005 11.7C8.38338 11.6167 8.44171 11.5333 8.52505 11.45L13.5 6.475C13.65 6.325 13.8292 6.25 14.0375 6.25C14.2459 6.25 14.425 6.325 14.575 6.475C14.725 6.625 14.7959 6.80833 14.7875 7.025C14.7792 7.24167 14.7 7.425 14.55 7.575L10.15 11.975L14.575 16.4C14.725 16.55 14.8 16.725 14.8 16.925C14.8 17.125 14.725 17.3 14.575 17.45C14.425 17.6 14.2417 17.675 14.025 17.675C13.8084 17.675 13.625 17.6 13.475 17.45Z"
+            fill={props.color ? props.color : "white"}
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_1013_695"
+            x="4.30005"
+            y="3.25"
+            width="14.5"
+            height="19.425"
+            filterUnits="userSpaceOnUse"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feMorphology
+              radius="1"
+              operator="dilate"
+              in="SourceAlpha"
+              result="effect1_dropShadow_1013_695"
+            />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_1013_695"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_1013_695"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    );
+  },
+  ChevronRightIcon: ({ ...props }: SVGProps<SVGSVGElement>) => {
+    return (
+      <svg
+        width={props.width ?? "24"}
+        height={props.height ?? "24"}
+        viewBox={props.viewBox ?? "0 0 24 24"}
+        {...props}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_d_1013_698)">
+          <path
+            d="M8.84995 17.45C8.71662 17.2834 8.64579 17.1 8.63745 16.9C8.62912 16.7 8.69995 16.525 8.84995 16.375L13.25 11.975L8.82495 7.55003C8.69162 7.4167 8.62912 7.23753 8.63745 7.01253C8.64579 6.78753 8.71662 6.60837 8.84995 6.47503C9.01662 6.30837 9.19579 6.2292 9.38745 6.23753C9.57912 6.24587 9.74995 6.32503 9.89995 6.47503L14.875 11.45C14.9583 11.5334 15.0166 11.6167 15.05 11.7C15.0833 11.7834 15.1 11.875 15.1 11.975C15.1 12.075 15.0833 12.1667 15.05 12.25C15.0166 12.3334 14.9583 12.4167 14.875 12.5L9.92495 17.45C9.77495 17.6 9.59995 17.6709 9.39995 17.6625C9.19995 17.6542 9.01662 17.5834 8.84995 17.45Z"
+            fill={props.color ? props.color : "white"}
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_1013_698"
+            x="4.63672"
+            y="3.23694"
+            width="14.4631"
+            height="19.4263"
+            filterUnits="userSpaceOnUse"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feMorphology
+              radius="1"
+              operator="dilate"
+              in="SourceAlpha"
+              result="effect1_dropShadow_1013_698"
+            />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_1013_698"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_1013_698"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+    );
+  },
+  WeightIcon: ({ ...props }: SVGProps<SVGSVGElement>) => {
+    return (
+      <svg
+        width={props.width ?? "17"}
+        height={props.height ?? "16"}
+        viewBox={props.viewBox ?? "0 0 17 16"}
+        {...props}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.28333 13H13.05L12 5.66663H5.33333L4.28333 13ZM8.66667 4.66663C8.95556 4.66663 9.19444 4.5694 9.38333 4.37496C9.57222 4.18051 9.66667 3.9444 9.66667 3.66663C9.66667 3.37774 9.57222 3.13885 9.38333 2.94996C9.19444 2.76107 8.95556 2.66663 8.66667 2.66663C8.38889 2.66663 8.15278 2.76107 7.95833 2.94996C7.76389 3.13885 7.66667 3.37774 7.66667 3.66663C7.66667 3.9444 7.76389 4.18051 7.95833 4.37496C8.15278 4.5694 8.38889 4.66663 8.66667 4.66663ZM10.4 4.66663H12C12.2556 4.66663 12.4778 4.74718 12.6667 4.90829C12.8556 5.0694 12.9667 5.27774 13 5.53329L14.0333 12.8666C14.0778 13.1666 14.0028 13.4305 13.8083 13.6583C13.6139 13.8861 13.3611 14 13.05 14H4.28333C3.97222 14 3.71945 13.8861 3.525 13.6583C3.33056 13.4305 3.25556 13.1666 3.3 12.8666L4.33333 5.53329C4.36667 5.27774 4.47778 5.0694 4.66667 4.90829C4.85556 4.74718 5.07778 4.66663 5.33333 4.66663H6.93333C6.84444 4.51107 6.77778 4.35274 6.73333 4.19163C6.68889 4.03051 6.66667 3.85551 6.66667 3.66663C6.66667 3.11107 6.86111 2.63885 7.25 2.24996C7.63889 1.86107 8.11111 1.66663 8.66667 1.66663C9.22222 1.66663 9.69444 1.86107 10.0833 2.24996C10.4722 2.63885 10.6667 3.11107 10.6667 3.66663C10.6667 3.85551 10.6444 4.03051 10.6 4.19163C10.5556 4.35274 10.4889 4.51107 10.4 4.66663ZM4.28333 13H13.05H4.28333Z"
+          fill={props.color ? props.color : "#1D1D1D"}
+        />
+      </svg>
+    );
+  },
+  RulerIcon: ({ ...props }: SVGProps<SVGSVGElement>) => {
+    return (
+      <svg
+        width={props.width ?? "16"}
+        height={props.height ?? "16"}
+        viewBox={props.viewBox ?? "0 0 16 16"}
+        {...props}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 2.33337C4 2.06671 4.1 1.83337 4.3 1.63337C4.5 1.43337 4.73333 1.33337 5 1.33337L11 1.33337C11.2556 1.33337 11.4861 1.43337 11.6917 1.63337C11.8972 1.83337 12 2.06671 12 2.33337V13.6667C12 13.9334 11.8972 14.1667 11.6917 14.3667C11.4861 14.5667 11.2556 14.6667 11 14.6667H5C4.73333 14.6667 4.5 14.5667 4.3 14.3667C4.1 14.1667 4 13.9334 4 13.6667L4 2.33337ZM5 2.33337L5 13.6667H11V11.5H8V10.5H11V8.50004H8V7.50004H11V5.50004H8V4.50004H11V2.33337L5 2.33337ZM8 4.50004V5.50004V4.50004ZM8 7.50004V8.50004V7.50004ZM8 10.5V11.5V10.5Z"
+          fill={props.color ? props.color : "#1D1D1D"}
+        />
+      </svg>
+    );
+  },
 };

@@ -1,9 +1,9 @@
 import { useHomePage } from "@/hooks/Home/useHomePage";
 import { PokemonCard } from "../PokemonCard/PokemonCard";
-import { pokedexListStyles } from "./PokedexList.styles";
+import { pokedexListStyles } from "./PokedexListHomePage.styles";
 import { PokedexListHeader } from "./PokedexListHeader/PokedexListHeader";
 
-export const PokedexList = () => {
+export const PokedexListHomePage = () => {
   const styles = pokedexListStyles();
   const { sortedPokemons } = useHomePage();
 

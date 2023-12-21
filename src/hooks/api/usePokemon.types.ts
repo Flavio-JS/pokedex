@@ -1,3 +1,5 @@
+import { PokemonTypes } from "@/components/PokemonTypeBadge/PokemonTypeBadge.types";
+
 export type PokemonData = {
   abilities: Ability2[];
   base_experience: number;
@@ -21,10 +23,12 @@ export type PokemonDataSummarized = {
   abilities: string[];
   height: number;
   id: number;
+  number: string;
   name: string;
   stats: Stats;
-  types: string[];
+  types: PokemonTypes[];
   weight: number;
+  imgUrl: string;
 };
 
 export type Stats = {
@@ -201,6 +205,6 @@ export type Ability2 = {
 };
 
 export type Ability = {
-  name: string;
+  name: PokemonTypes;
   url: string;
 };
