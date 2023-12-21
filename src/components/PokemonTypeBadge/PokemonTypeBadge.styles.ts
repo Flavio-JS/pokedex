@@ -104,6 +104,11 @@ export const pokemonTypeBadgeStyles = sva({
           backgroundColor: "pokemonType.water",
         },
       },
+      type: {
+        pokemonTypeBadgeStylesWrapper: {
+          backgroundColor: "grayscale.medium",
+        },
+      },
     },
   },
 });
