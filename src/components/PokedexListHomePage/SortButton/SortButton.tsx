@@ -1,7 +1,7 @@
 import { useHomePage } from "@/hooks/Home/useHomePage";
-import { Icon } from "../Icon/Icon";
+import { Icon } from "../../Icon/Icon";
 import { sortButtonStyles } from "./SortButton.styles";
-import { useSortButton } from "../../hooks/SortButton/useSortButton";
+import { useSortButton } from "../../../hooks/SortButton/useSortButton";
 
 export const SortButton = () => {
   const { handleClick } = useSortButton();

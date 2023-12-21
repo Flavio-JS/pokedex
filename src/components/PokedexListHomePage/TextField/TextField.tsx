@@ -1,6 +1,6 @@
-import { Icon } from "../Icon/Icon";
+import { Icon } from "../../Icon/Icon";
 import { TextFieldStyles } from "./TextField.styles";
-import { useTextField } from "../../hooks/TextField/useTextField";
+import { useTextField } from "../../../hooks/TextField/useTextField";
 
 export const TextField = () => {
   const styles = TextFieldStyles();
