@@ -229,6 +229,17 @@ export const detailsPokemonStatsBarStyles = sva({
           backgroundColor: "pokemonType.water",
         },
       },
+      type: {
+        detailsPokemonStatsBarTitle: {
+          color: "grayscale.wireframe",
+        },
+        detailsPokemonStatsBarRowFull: {
+          backgroundColor: "grayscale.wireframe",
+        },
+        detailsPokemonStatsBarRow: {
+          backgroundColor: "grayscale.wireframe",
+        },
+      },
     },
   },
 });

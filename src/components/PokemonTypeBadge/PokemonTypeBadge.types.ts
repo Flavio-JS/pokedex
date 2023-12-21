@@ -16,7 +16,8 @@ export type PokemonTypes =
   | "psychic"
   | "rock"
   | "steel"
-  | "water";
+  | "water"
+  | "type";
 
 export type PokemonTypeBadgeTypes = {
   pokemonType: PokemonTypes;

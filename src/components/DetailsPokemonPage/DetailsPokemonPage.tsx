@@ -17,15 +17,53 @@ export const DetailsPokemonPage = () => {
 
   if (isError)
     return (
-      <div>
-        <h1>Houve um erro</h1>
+      <div className={styles.detailsPokemonWrapper}>
+        <DetailsPokemonHeader name="Error" number="000" />
+        <DetailsPokemonImage
+          id={0}
+          imgUrl="/pokemonSilhouette.png"
+          name="Error"
+        />
+        <DetailsPokemonStats
+          abilities={["Error"]}
+          height={0}
+          stats={{
+            hp: 0,
+            atk: 0,
+            def: 0,
+            satk: 0,
+            sdef: 0,
+            spd: 0,
+          }}
+          types={["type"]}
+          weight={0}
+        />
       </div>
     );
 
   if (isLoading)
     return (
-      <div>
-        <h1>CARREGANDO DOIDO</h1>
+      <div className={styles.detailsPokemonWrapper}>
+        <DetailsPokemonHeader name="Loading..." number="000" />
+        <DetailsPokemonImage
+          id={0}
+          imgUrl="/pokemonSilhouette.png"
+          name="Loading..."
+        />
+        <DetailsPokemonStats
+          abilities={["Loading..."]}
+          height={0}
+          stats={{
+            hp: 0,
+            atk: 0,
+            def: 0,
+            satk: 0,
+            sdef: 0,
+            spd: 0,
+          }}
+          types={["type"]}
+          weight={0}
+        />
       </div>
     );
 

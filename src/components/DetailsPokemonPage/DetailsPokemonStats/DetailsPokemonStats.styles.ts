@@ -179,6 +179,14 @@ export const detailsPokemonStatsStyles = sva({
           color: "pokemonType.water",
         },
       },
+      type: {
+        detailsPokemonStatsAboutTitle: {
+          color: "grayscale.wireframe",
+        },
+        detailsPokemonStatsBaseStatsTitle: {
+          color: "grayscale.wireframe",
+        },
+      },
     },
   },
 });

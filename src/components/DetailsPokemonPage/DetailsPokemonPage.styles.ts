@@ -105,6 +105,11 @@ export const detailsPokemonPageStyles = sva({
           backgroundColor: "pokemonType.water",
         },
       },
+      type: {
+        detailsPokemonWrapper: {
+          backgroundColor: "grayscale.wireframe",
+        },
+      },
     },
   },
 });
