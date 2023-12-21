@@ -37,7 +37,7 @@ export const DetailsPokemonPhysicalStats = ({
       <div
         className={css({
           borderLeft: "1px solid #E0E0E0",
-          height: "48px",
+          height: "61px",
           width: "1px",
         })}
       />
