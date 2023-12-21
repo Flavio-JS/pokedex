@@ -1,5 +1,5 @@
 import { useHomePage } from "@/hooks/Home/useHomePage";
-import { PokemonCard } from "../PokemonCard/PokemonCard";
+import { PokemonCard } from "./PokemonCard/PokemonCard";
 import { pokedexListStyles } from "./PokedexListHomePage.styles";
 import { PokedexListHeader } from "./PokedexListHeader/PokedexListHeader";
 
