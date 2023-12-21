@@ -4,7 +4,6 @@ export const detailsPokemonStatsStyles = sva({
   slots: [
     "detailsPokemonStatsWrapper",
     "detailsPokemonStatsTypesWrapper",
-    "detailsPokemonStatsPhysicalInformationWrapper",
     "detailsPokemonStatsAboutTitle",
     "detailsPokemonStatsBaseStatsTitle",
   ],
@@ -24,11 +23,6 @@ export const detailsPokemonStatsStyles = sva({
     detailsPokemonStatsTypesWrapper: {
       display: "flex",
       gap: "16px",
-    },
-    detailsPokemonStatsPhysicalInformationWrapper: {
-      display: "flex",
-      justifyContent: "space-around",
-      width: "100%",
     },
     detailsPokemonStatsAboutTitle: {
       fontSize: "14px",
