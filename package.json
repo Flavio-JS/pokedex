@@ -14,8 +14,7 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-query": "^3.39.3",
-    "sharp": "^0.33.1"
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.22.1",
