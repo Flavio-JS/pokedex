@@ -44,7 +44,9 @@ export const usePokemonById = (id: number) => {
       const name =
         pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
 
-      const imgUrl = `/imagens_pokemon/${formatIdPokemon(pokemonData.id)}.png`;
+      const imgUrl = `https://raw.githubusercontent.com/Flavio-JS/pokemon_imgs/main/${formatIdPokemon(
+        pokemonData.id
+      )}.png`;
 
       const number = formatIdPokemon(pokemonData.id);
 

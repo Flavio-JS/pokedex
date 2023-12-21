@@ -41,7 +41,6 @@ export const DetailsPokemonImage = ({
         width={180}
         height={180}
         src={imgUrl}
-        priority
       />
 
       <button
