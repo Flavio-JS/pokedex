@@ -11,7 +11,9 @@ export const DetailsPokemonPage = () => {
 
   const { data: pokemonData, isError, isLoading } = usePokemonById(Number(id));
 
-  const styles = detailsPokemonPageStyles();
+  const styles = detailsPokemonPageStyles({
+    backgroundTypeColor: pokemonData?.types[0],
+  });
 
   if (isError)
     return (
